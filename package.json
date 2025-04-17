@@ -1,0 +1,64 @@
+{
+  "name": "aj-auth",
+  "version": "1.0.0",
+  "description": "Universal OTP Authentication Package",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./types/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist/",
+    "types/",
+    "src/"
+  ],
+  "keywords": [
+    "otp",
+    "authentication",
+    "universal",
+    "email",
+    "sms"
+  ],
+  "author": {
+  "name": "Ajay Kumar",
+  "email": "Kumarajay.rs33222@gmail.com",
+  "url": "https://github.com/Aj3322"
+},
+
+  "license": "ISC",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Aj3322/aj-auth"
+},
+"bugs": {
+  "url": "https://github.com/Aj3322/aj-auth/issues"
+},
+"homepage": "https://github.com/Aj3322/aj-auth#readme",
+
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^20.4.2",
+    "@types/twilio": "^3.19.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "twilio": "^5.5.2",
+    "zod": "^3.24.3"
+  }
+}

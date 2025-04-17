@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                  // Use ES2020 for modern JavaScript
+    "module": "CommonJS",                 // Use CommonJS for CJS modules
+    "moduleResolution": "node",           // Node-style resolution
+    "outDir": "./dist/cjs",               // Output directory for CJS
+    "declaration": true,                  // Generate TypeScript declaration files
+    "esModuleInterop": true,              // Enable esModuleInterop for compatibility
+    "strict": true,                       // Enable strict type-checking
+    "sourceMap": true,                    // Generate source maps
+    "skipLibCheck": true                  // Skip type checking of declaration files
+  },
+  "include": ["src/**/*"]                  // Include all files under src/
+}

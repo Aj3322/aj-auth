@@ -1,0 +1,22 @@
+# Don't publish these
+# Source files you don't want to expose
+src/
+
+# Development-only files
+.gitignore
+npm-debug.log
+tsconfig.json
+tsconfig.cjs.json
+.vscode/
+.idea/
+*.tsbuildinfo
+
+# Test files (if any)
+tests/
+__tests__/
+coverage/
+
+# Git-related
+.git/
+*.md
+.env
